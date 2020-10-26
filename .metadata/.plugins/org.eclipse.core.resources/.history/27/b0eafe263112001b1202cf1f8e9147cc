@@ -1,0 +1,19 @@
+package variaveis;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		String nome = "Melancia";
+		int codigo = 0001;
+		int qtde = 10;
+		double valor = 5.00;
+		double percent = valor / (valor-0.5);
+		System.out.println("Melancia: "+ nome );
+		System.out.println("Valor..: "+ valor );
+		System.out.println("Qtde....: "+ qtde );
+		System.out.println("desconto....: " + percent );
+			
+
+	}
+
+}

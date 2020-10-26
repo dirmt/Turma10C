@@ -1,0 +1,13 @@
+package br.com.concessionaria.teste;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		//criar um objeto
+		Formula1 objeto = null;
+		//estanciar um objeto
+		carro.preencherEscuderia("ferrari");
+	
+	}
+
+}

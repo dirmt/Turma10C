@@ -1,0 +1,27 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class DesafioSimples {
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Digite por favor o seu nome");
+		short idade = Short.parseShort(JOptionPane.showInputDialog("Digite a sua idade"));
+		System.out.println("Nome do Eleitor: "+ nome );
+		System.out.println("Idade..: "+ idade );
+
+		if (idade>17 && idade<70) {
+			System.out.println("Muito Obrigado por Votar:" + idade);
+		}
+		if (idade==16 || idade==17 && idade>70) {
+			System.out.println("Seu Voto e Facultativo" + idade);
+		}
+		if (idade<16) {
+			System.out.println("Proibido a votação");
+		}
+
+	}
+
+
+}
+

@@ -1,0 +1,32 @@
+package br.com.unixyz.util;
+
+import javax.swing.JOptionPane;
+
+public class Magica {
+
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	public static int i(String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	public static float f(String msg) {
+		return Float.parseFloat(s(msg));
+	}
+
+	Professor professor = new Professor();
+	Endereco endereco = new Endereco();
+	professor.setId(Magica.i("ID"));
+	professor.setNome(Magica.s("Nome"));
+	professor.setFormacao(Magica.s("Formacao"));
+	// MUITO IMPORTANTE
+	professor.setEndereco(endereco);
+	// NUNCA esquecer de atribuir o objeto
+	endereco.setLogradouro(Magica.s("Logradouro"));
+	endereco.setNumero(Magica.s("Numero"));
+	endereco.setBairro(Magica.s("Bairro"));
+	endereco.setCidade(Magica.s("Cidade"));
+	// seguiria preenchendo os outros atributos
+	System.out.println(professor.getAll());
+
+}
